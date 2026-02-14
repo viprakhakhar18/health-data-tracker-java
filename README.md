@@ -1,2 +1,36 @@
 # health-data-tracker-java
-Console-based Java tracker using OOP and file I/O to save and load structured health records.
+
+This is a simple console-based Java program that allows a user to log basic health information such as date, symptoms, mood (1–5), and notes.
+
+The program stores entries in a CSV file so they can be saved and loaded across sessions.
+
+## Features
+
+- Add a new health entry
+- View all saved entries
+- Search entries by date
+- Save and load data using a CSV file
+- Input validation for mood and date format
+
+## Project Structure
+
+- `HealthEntry.java` – represents a single health record
+- `HealthTracker.java` – manages storing and retrieving entries
+- `Main.java` – runs the menu system and user interaction
+- `data/entries.csv` – stores saved entries
+
+## Concepts Used
+
+- Object-Oriented Programming (separate classes for structure and logic)
+- File I/O using CSV format
+- Input validation
+- ArrayList for managing records
+
+## How to Run
+
+From the project folder:
+
+javac -d out src/*.java  
+java -cp out Main  
+
+The file `entries.csv` will be created automatically inside the `data` folder when you save or exit the program.
